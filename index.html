@@ -9,40 +9,25 @@
 </head>
 <body>
 
-    <!-- Fixed Header with Name and Right-side Navigation -->
-    <div class="fixed-header">
-        <div class="header-content">
-            <div class="name-title">
-                <div class="logo">Colin <span>McIntyre</span></div>
-                <div class="title">Software Development Student</div>
-            </div>
-            
-            <!-- Desktop Navigation Tabs -->
-            <div class="right-nav-tabs">
-                <a href="#about" class="nav-tab active">About</a>
-                <a href="#education" class="nav-tab">Education</a>
-                <a href="#skills" class="nav-tab">Skills</a>
-                <a href="#projects" class="nav-tab">Projects</a>
-                <a href="#resume" class="nav-tab">Resume</a>
-                <a href="#contact" class="nav-tab">Contact</a>
-            </div>
-            
-            <!-- Mobile Navigation Toggle -->
-            <div class="mobile-nav-toggle">
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">Colin <span>McIntyre</span></div>
+            <div class="mobile-menu">
                 <i class="fas fa-bars"></i>
             </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
-    
-    <!-- Mobile Navigation Menu -->
-    <div class="mobile-nav">
-        <a href="#about" class="nav-tab">About</a>
-        <a href="#education" class="nav-tab">Education</a>
-        <a href="#skills" class="nav-tab">Skills</a>
-        <a href="#projects" class="nav-tab">Projects</a>
-        <a href="#resume" class="nav-tab">Resume</a>
-        <a href="#contact" class="nav-tab">Contact</a>
-    </div>
+    </header>
 
     <!-- Hero Section -->
     <section class="hero">
@@ -67,10 +52,10 @@
                     <p>Outside of my studies and academic projects, I dedicate time to exploring new frameworks, contributing to open-source initiatives, and actively participating in the developer community to both share and absorb knowledge.</p>
                 </div>
                 <div class="about-image">
-                    <div class="profile-placeholder">
-                        <i class="fas fa-user-circle"></i>
-                        <h3>Colin McIntyre</h3>
-                        <p>Software Development Student</p>
+                    <div style="width: 300px; height: 300px; background: linear-gradient(135deg, var(--secondary-color), var(--primary-color)); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; flex-direction: column; padding: 20px;">
+                        <i class="fas fa-user-circle" style="font-size: 5rem; margin-bottom: 15px;"></i>
+                        <h3 style="color: white;">Colin McIntyre</h3>
+                        <p style="color: var(--light-color); text-align: center;">Software Development Student</p>
                     </div>
                 </div>
             </div>
@@ -206,7 +191,8 @@
                 <!-- Calculator Project -->
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="calcultor.png" alt="Scientific Calculator Screenshot">
+                        <img src="calcultor.png" alt="Tic-Tac-Toe Game Screenshot" style="max-width: 200%;
+                            max-height: 229px; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.3);">
                     </div>
                     <div class="project-content">
                         <h3>Scientific Calculator</h3>
@@ -243,7 +229,8 @@
                 <!-- Tic-Tac-Toe Project -->
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="Screenshot (167).png" alt="Tic-Tac-Toe Game Screenshot">
+                        <img src="Screenshot (167).png" alt="Tic-Tac-Toe Game Screenshot" style="max-width: 200%;
+                            max-height: 229px; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.3);">
                     </div>
                     <div class="project-content">
                         <h3>Tic-Tac-Toe with AI</h3>
@@ -276,68 +263,69 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
     <!-- Resume Section -->
     <section id="resume" class="resume">
-        <div class="container">
-            <h2 class="section-title">Resume</h2>
-            <div class="resume-content">
-                <p>For a detailed overview of my education, skills, and experience, please download my resume.</p>
+    <div class="container">
+        <h2 class="section-title">Resume</h2>
+        <div class="resume-content">
+            <p>For a detailed overview of my education, skills, and experience, please download my resume.</p>
+            
+            <!-- Download button for DOCX file -->
+            <a href="Colin W. McIntyrea6resume.docx" class="btn" download="Colin W. McIntyrea6resume.docx">
+                <i class="fas fa-download"></i> Download Resume (DOCX)
+            </a>
+            
+            <!-- Optional: Also offer PDF version if you have one -->
+            <a href="Colin W. McIntyrea6resume.pdf" class="btn" style="margin-left: 15px; background-color: #e74c3c;" download="Colin W. McIntyrea6resume.pdf">
+                <i class="fas fa-file-pdf"></i> Download as PDF
+            </a>
+            
+            <div class="resume-details" style="margin-top: 30px; text-align: left; max-width: 700px; margin-left: auto; margin-right: auto;">
+                <h3 style="color: var(--primary-color); margin-bottom: 15px;">Quick Resume Overview</h3>
                 
-                <!-- Download button for DOCX file -->
-                <a href="Colin W. McIntyrea6resume.docx" class="btn" download="Colin W. McIntyrea6resume.docx">
-                    <i class="fas fa-download"></i> Download Resume (DOCX)
-                </a>
+                <div class="resume-section">
+                    <h4><i class="fas fa-graduation-cap"></i> Education</h4>
+                    <p><strong>Mohawk College</strong> | July 2023 - Present</p>
+                    <p>Advanced Diploma in Computer Systems Technology - Software Development</p>
+                </div>
                 
-                <!-- Optional: Also offer PDF version if you have one -->
-                <a href="Colin W. McIntyrea6resume.pdf" class="btn pdf-btn" download="Colin W. McIntyrea6resume.pdf">
-                    <i class="fas fa-file-pdf"></i> Download as PDF
-                </a>
-                
-                <div class="resume-details">
-                    <h3>Quick Resume Overview</h3>
-                    
-                    <div class="resume-section">
-                        <h4><i class="fas fa-graduation-cap"></i> Education</h4>
-                        <p><strong>Mohawk College</strong> | July 2023 - Present</p>
-                        <p>Advanced Diploma in Computer Systems Technology - Software Development</p>
-                    </div>
-                    
-                    <div class="resume-section">
-                        <h4><i class="fas fa-code"></i> Technical Skills</h4>
-                        <div class="skills-list">
-                            <span class="skill-tag">Java</span>
-                            <span class="skill-tag">JavaScript</span>
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">HTML/CSS</span>
-                            <span class="skill-tag">SQL</span>
-                            <span class="skill-tag">C#</span>
-                            <span class="skill-tag">PHP</span>
-                            <span class="skill-tag">ASP.NET</span>
-                            <span class="skill-tag">React</span>
-                        </div>
-                    </div>
-                    
-                    <div class="resume-section">
-                        <h4><i class="fas fa-tools"></i> Tools & Technologies</h4>
-                        <p>Git, GitHub, VS Code, IntelliJ, Microsoft Azure, Agile/KANBAN, Windows, Linux</p>
-                    </div>
-                    
-                    <div class="resume-section">
-                        <h4><i class="fas fa-user"></i> Soft Skills</h4>
-                        <p>Fast learner, detail-oriented, team player, excellent problem-solving, technical communication</p>
+                <div class="resume-section" style="margin-top: 20px;">
+                    <h4><i class="fas fa-code"></i> Technical Skills</h4>
+                    <div class="skills-list" style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px;">
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">ASP.NET</span>
+                        <span class="skill-tag">React</span>
                     </div>
                 </div>
                 
-                <p class="resume-note">
-                    Seeking opportunities in software development, web development, or related fields.
-                </p>
+                <div class="resume-section" style="margin-top: 20px;">
+                    <h4><i class="fas fa-tools"></i> Tools & Technologies</h4>
+                    <p>Git, GitHub, VS Code, IntelliJ, Microsoft Azure, Agile/KANBAN, Windows, Linux</p>
+                </div>
+                
+                <div class="resume-section" style="margin-top: 20px;">
+                    <h4><i class="fas fa-user"></i> Soft Skills</h4>
+                    <p>Fast learner, detail-oriented, team player, excellent problem-solving, technical communication</p>
+                </div>
             </div>
+            
+            <p style="margin-top: 30px; font-size: 0.9rem; color: var(--text-light);">
+                Seeking opportunities in software development, web development, or related fields.
+            </p>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
@@ -387,10 +375,11 @@
                         </div>
                         <div>
                             <h3>GitHub</h3>
-                            <a href="https://github.com/ColinMcIntyre01" class="github-link">
-                                <p>Check It Out</p>
-                            </a>
+                          <a href="https://github.com/ColinMcIntyre01">
+                              <p>Check It Out </p> </a>
                         </div>
+                    </div>
+                    <div class="contact-item">
                     </div>
                 </div>
                 <div class="contact-form">
@@ -411,10 +400,8 @@
                             <label for="message">Your Message *</label>
                             <textarea id="message" class="form-control" placeholder="Enter your message" rows="5" required></textarea>
                         </div>
-                        <button type="submit" class="btn">
-                            <i class="fas fa-paper-plane"></i> Send Message
-                        </button>
-                        <p class="required-note">* Required fields</p>
+                        <button type="submit" class="btn">Send Message</button>
+                        <p style="margin-top: 15px; font-size: 0.9rem; color: var(--text-light);">* Required fields</p>
                     </form>
                 </div>
             </div>
@@ -440,72 +427,22 @@
                 </div>
                 <div class="copyright">
                     <p>&copy; 2025 Colin McIntyre. All Rights Reserved.</p>
-                    <p class="assignment-note">This website was created as part of a college assignment.</p>
+                    <p style="margin-top: 5px;">This website was created as part of a college assignment.</p>
                 </div>
             </div>
         </div>
     </footer>
 
     <script>
-        // Mobile navigation toggle
-        const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
-        const mobileNav = document.querySelector('.mobile-nav');
-        
-        mobileNavToggle.addEventListener('click', () => {
-            mobileNav.classList.toggle('show');
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('show');
         });
 
-        // Close mobile nav when clicking outside
-        document.addEventListener('click', (e) => {
-            if (!mobileNav.contains(e.target) && !mobileNavToggle.contains(e.target)) {
-                mobileNav.classList.remove('show');
-            }
-        });
-
-        // Update active tab on scroll
-        const sections = document.querySelectorAll('section');
-        const navTabs = document.querySelectorAll('.nav-tab');
-        
-        function updateActiveTab() {
-            let current = '';
-            
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (window.scrollY >= (sectionTop - 150)) {
-                    current = section.getAttribute('id');
-                }
-            });
-            
-            navTabs.forEach(tab => {
-                tab.classList.remove('active');
-                if (tab.getAttribute('href') === `#${current}`) {
-                    tab.classList.add('active');
-                }
-            });
-        }
-        
-        window.addEventListener('scroll', updateActiveTab);
-        updateActiveTab(); // Initialize active tab
-
-        // Smooth scrolling for navigation tabs
-        document.querySelectorAll('.nav-tab').forEach(tab => {
-            tab.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
-                
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    // Close mobile nav if open
-                    mobileNav.classList.remove('show');
-                    
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 100,
-                        behavior: 'smooth'
-                    });
-                }
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('nav ul li a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.querySelector('nav ul').classList.remove('show');
             });
         });
 
@@ -513,17 +450,42 @@
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
             
+            // Get form values
             const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
             const message = document.getElementById('message').value;
             
+            // Simple validation
             if (!name || !email || !message) {
                 alert('Please fill in all required fields.');
                 return;
             }
             
+            // In a real application, you would send this data to a server
+            // For now, we'll just show a success message
             alert(`Thank you for your message, ${name}! I will get back to you soon at ${email}.`);
+            
+            // Reset form
             this.reset();
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
         });
     </script>
 </body>
