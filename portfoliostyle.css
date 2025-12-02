@@ -593,3 +593,70 @@ footer {
         padding: 20px;
     }
 }
+
+/* Additional styles for the cleaned HTML */
+
+.profile-card {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.profile-icon {
+    font-size: 5rem;
+    margin-bottom: 15px;
+}
+
+.resume-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.btn-pdf {
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+}
+
+.btn-pdf:hover {
+    background-color: transparent;
+    color: #e74c3c;
+}
+
+.resume-note {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+.form-note {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+.contact-item a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.contact-item a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+/* Fix project image sizes */
+.project-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
