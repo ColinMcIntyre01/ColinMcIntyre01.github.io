@@ -44,8 +44,9 @@ header {
 
 .header-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .logo {
@@ -83,11 +84,15 @@ nav a:hover {
     color: white;
     font-size: 1.5rem;
     cursor: pointer;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 /* Hero Section */
 .hero {
-    padding: 180px 0 100px;
+    padding: 150px 0 100px; /* Reduced from 180px to 150px */
     background: linear-gradient(135deg, var(--primary-color), var(--dark-color));
     color: white;
     text-align: center;
@@ -537,7 +542,7 @@ footer {
     nav ul {
         display: none;
         position: absolute;
-        top: 70px;
+        top: 60px; /* Adjusted from 70px to 60px */
         left: 0;
         right: 0;
         background-color: var(--primary-color);
@@ -569,6 +574,12 @@ footer {
     .projects-grid {
         grid-template-columns: 1fr;
     }
+    
+    /* Center navigation with mobile menu on the left */
+    .header-container {
+        justify-content: flex-end;
+        padding-right: 20px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -591,6 +602,10 @@ footer {
     .skill-category,
     .project-content {
         padding: 20px;
+    }
+    
+    nav ul {
+        gap: 15px;
     }
 }
 
